@@ -39,7 +39,8 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage/packages/apps/Snap
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += device/xiaomi/whyred
+PRODUCT_SOONG_NAMESPACES += \
+     device/xiaomi/whyred
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
@@ -221,6 +222,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service \
     android.hardware.broadcastradio@1.0-impl
+
+# Doze
+PRODUCT_PACKAGES += \
+    XiaomiDoze \
+    CustomDoze
 
 # DRM
 PRODUCT_PACKAGES += \

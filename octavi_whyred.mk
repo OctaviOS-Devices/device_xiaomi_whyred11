@@ -25,18 +25,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 # Inherit from whyred device
 $(call inherit-product, device/xiaomi/whyred/device.mk)
 
-# Inherit from custom vendor
-$(call inherit-product-if-exist, vendor/MiuiCamera/config.mk)
-
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 
-DEVICE_MAINTAINER := Sreekanth
-PRODUCT_NAME := arrow_whyred
+PRODUCT_NAME := octavi_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_MODEL := Redmi Note 5
+PRODUCT_MODEL := Redmi Note 5 Pro
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
@@ -54,4 +50,6 @@ TARGET_VENDOR := Xiaomi
 IS_PHONE := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
-TARGET_SCREEN_DENSITY := 440
+TARGET_SCREEN_DENSITY := 420
+OCTAVI_BUILD_TYPE := Official
+OCTAVI_DEVICE_MAINTAINER := Beingmishra
