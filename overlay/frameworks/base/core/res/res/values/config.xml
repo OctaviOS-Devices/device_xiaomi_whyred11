@@ -1093,6 +1093,7 @@
 
     <!-- Whether to enable doze always on -->
     <bool name="config_enableDozeAlwaysOn">true</bool>
+    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
 
   <!-- Battery Health -->
   <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full</string>
